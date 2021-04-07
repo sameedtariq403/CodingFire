@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.big{
+    padding: 0px;
+    margin: auto;
+    overflow: -moz-hidden-unscrollable;
+}
+.navbar{
+    background-color: transparent;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    color: rgb(253, 253, 253) !important;
+}
+
+
+.background{
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    position: absolute;
+   right: 0;left: 0;top: 0;bottom: 0;
+
+}
+
+.background img{
+    padding: 0px;
+    max-height: 100vh;
+    object-fit: cover;
+    width: 100%;
+   
+    
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(25, 9, 248);
+    position: absolute;
+    top: 0px;
+    opacity: 0.08;
+    padding: 0px;
+       
+
+}
+
+
+.content{
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: auto;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 0px;
+    text-align: center;
+}
+.content h2{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-bottom: 0px;
+    
+}
+
+.divider{
+    width: 35%;
+    height: 2px;
+    background-color: white;
+    border-radius: 60%;
+    margin-top: 30px;
+}
+
+.social-links{
+    width: 100%;
+    height: auto;
+    padding: 20px 20px;
+}
+
+.social-links img{
+    width: 50px;
+    cursor: pointer;
+}
+.bubble{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+}
+.color{
+    background-color: rgb(29, 197, 248);
+    width: 100%;
+    padding: 0px;
+    height: 100vh;
+}
+
+
+.image-bubble {
+    width: auto;
+    display: flex;
+    margin: auto;
+   
+}
+.bubble-images1 img{
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    animation-name: bble;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    opacity: 0;
+}
+.bubble-images2 img{
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    animation-name: bble;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+    opacity: 0;
+
+}
+.bubble-images3 img{
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    animation-name: bble;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 6s;
+    opacity: 0;
+
+}
+.bubble-images4 img{
+    position: absolute;
+    bottom: 0;
+    width: 55px;
+    animation-name: bble;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 8s;
+    opacity: 0;
+
+}
+.bubble-images5 img{
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    animation-name: bble;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+    opacity: 0;
+
+}
+.bubble-images6 img{
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    animation-name: bble;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 7s;
+    opacity: 0;
+
+}
+.bubble-images7 img{
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    animation-name: bble;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 9s;
+    opacity: 0;
+
+}
+
+
+@keyframes bble{
+    0%{
+        opacity: 0;
+        animation-delay: 3s;
+        margin-bottom: 0px;
+    }
+    50%{
+        opacity: 1;
+        animation-delay: 1s;
+        margin-bottom: 50%;
+    }
+    100%{
+        opacity: 0;
+        animation-delay: 4s;
+        margin-bottom: 100%;
+    }
+}
+
+
+
+
+@media (max-width:769px){
+    .content{
+        padding: 0px;
+    }
+}
+@media (max-width:426px){
+    .navbar-brand{
+       
+        font-size: 20px;
+        padding-left: 0px;
+       
+    }
+    
+    .content{
+        padding: 0px;
+    }
+    .content h2{
+        font-size: 30px;
+    }
+    .bubble-images1 img{
+        width: 40px;
+        
+    }
+    .bubble-images2 img{
+       
+        width: 35px;
+       
+    
+    }
+    .bubble-images3 img{
+        
+        width: 20px;
+        
+    
+    }
+    .bubble-images4 img{
+      
+        width: 25px;
+       
+    }
+    .bubble-images5 img{
+       
+        width: 37px;
+    }
+    .bubble-images6 img{
+        width: 23px;
+     
+    }
+    .social-links{
+        padding: 15px 0;
+    }
+    
+}
